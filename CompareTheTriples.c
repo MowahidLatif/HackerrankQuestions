@@ -53,7 +53,16 @@ int parse_int(char*);
  *
  */
 int* compareTriplets(int a_count, int* a, int b_count, int* b, int* result_count) {
+  int* res = malloc(sizeof(int) * 5);
 
+  for (int i = 0; i < a_count; i++) {
+    if (a[i] > b[i]) {
+      res[0] += 1;
+    } else {
+      res[1] == 1;
+    }
+  }
+  return res;
 }
 
 int main()
